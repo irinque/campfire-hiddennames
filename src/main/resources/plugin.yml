@@ -1,0 +1,6 @@
+name: campfire-hiddennames
+version: '1.0.0'
+main: me.irinque.CampfireHiddenNames.Main
+api-version: '1.21'
+authors: [ irinque ]
+website: https://github.com/irinque
