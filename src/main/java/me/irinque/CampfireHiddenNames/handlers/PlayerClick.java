@@ -16,7 +16,7 @@ public class PlayerClick implements Listener
         Entity entity_clicked = event.getRightClicked();
         Player player = event.getPlayer();
 
-        if (!entity_clicked.hasMetadata("NPC") && !player.isSneaking())
+        if (entity_clicked instanceof Player && !player.isSneaking())
         {
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacy(entity_clicked.getName()));
         }
